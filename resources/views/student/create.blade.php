@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Create Student</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+@extends('layout.app')
+@section('title' , 'create student')
+@section('content')
     <div class="container mt-4">
         <h1>Create Student</h1>
         <form method="POST" action="/students">
-        <h1>Create Post</h1>
  
  @if ($errors->any())
      <div class="alert alert-danger">
@@ -40,5 +35,4 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
-</body>
-</html>
+@endsection

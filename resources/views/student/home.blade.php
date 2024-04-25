@@ -1,7 +1,7 @@
 @extends('layout.app')
-@section("content")
 
-    <div class="container mt-4">
+@section('content')
+   <div class="container mt-4">
         <h1>User List</h1>
         <td><a href="/students/create" class="btn btn-dark">Add Student</a>
         <table class="table">
