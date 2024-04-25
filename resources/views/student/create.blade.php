@@ -8,6 +8,17 @@
     <div class="container mt-4">
         <h1>Create Student</h1>
         <form method="POST" action="/students">
+        <h1>Create Post</h1>
+ 
+ @if ($errors->any())
+     <div class="alert alert-danger">
+         <ul>
+             @foreach ($errors->all() as $error)
+                 <li>{{ $error }}</li>
+             @endforeach
+         </ul>
+     </div>
+ @endif
         @csrf
 
             <div class="form-group">

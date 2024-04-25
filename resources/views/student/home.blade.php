@@ -1,10 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>User List</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
+@extends('layout.app')
+@section("content")
+
     <div class="container mt-4">
         <h1>User List</h1>
         <td><a href="/students/create" class="btn btn-dark">Add Student</a>
@@ -43,5 +39,4 @@
             </tbody>
         </table>
     </div>
-</body>
-</html>
+@endsection

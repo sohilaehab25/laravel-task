@@ -13,7 +13,7 @@ class Student extends Model
     use HasFactory;
     #students 
     protected $table = 'student';
-            //relationship with instractor
+        //relationship with instractor
     public function user()
     {
         return $this->belongsTo(User::class);

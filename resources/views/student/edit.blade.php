@@ -7,7 +7,18 @@
 <body>
     <div class="container mt-4">
         <h1>update Student</h1>
+
         <form method="post" action="/students/{{ $student -> id }}">
+        @if ($errors->any())
+     <div class="alert alert-danger">
+         <ul>
+             @foreach ($errors->all() as $error)
+                 <li>{{ $error }}</li>
+             @endforeach
+         </ul>
+     </div>
+ @endif
+
             @csrf
             @method('put')
             <div class="form-group">
