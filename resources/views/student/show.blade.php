@@ -1,6 +1,7 @@
-<!DOCTYPE html>
-<html>
-<head>
+@extends('layouts.app')
+
+@section('content')
+
     <title>User List</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
@@ -26,5 +27,4 @@
             </tbody>
         </table>
     </div>
-</body>
-</html>
+@endsection
